@@ -9,13 +9,21 @@
 		<title>WatFlix</title>
 		<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/> -->
         <link rel="stylesheet" href="<c:url value='css/common.css'/>">
-        <link rel="stylesheet" href="<c:url value='css/index.css'/>">
+        <link rel="stylesheet" href="<c:url value='css/mypage_index.css'/>">
+        
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+        
+        
+<%--         <link rel="stylesheet" href="<c:url value='css/index.css'/>"> --%>
         <script src="<c:url value='js/jquery-3.6.0.min.js'/>"></script>
-        <script src="<c:url value='jsCustom/index.js'/>"></script>
+  <%--       <script src="<c:url value='jsCustom/index.js'/>"></script> --%>
         <script src="<c:url value='jsCustom/main.js'/>"></script>
+        <script src="<c:url value='jsCustom/mypage_index.js'/>"></script>
         <script src="<c:url value='https://kit.fontawesome.com/50d21a2bed.js'/>" crossorigin="anonymous"></script>
 	</head>
 	<body>
+			
 		<!-- navbar 부분입니다 -->
 	    <nav>
 	        <div class="nav-container nav-outter">
@@ -24,6 +32,11 @@
 	                <a href="<c:url value='/'/>" class="icon-item" >
 	                    <span class="mainLogo">WattFlix</span>
 	                </a>
+	                
+	                	<div class="nav-menu-icon-x" id="nav-menu-icon-x">
+							<i class="fa-solid fa-xmark fa-lg"></i>
+						</div>
+	                
 	            </div>
 	
 	            <div class="nav-menu">
@@ -115,5 +128,10 @@
 		            </div>
 		        </div>
 	    </nav>
+	    
+	    	<div class="nav-menu-icon" id="nav-menu-icon">
+				<i class="fa-solid fa-bars fa-lg"></i>			
+			</div>
+	    
 	</body>
 </html>

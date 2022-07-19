@@ -33,11 +33,11 @@ public class MemberService implements IMemberService {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
+	
+	// 로그인
 	@Override
 	public String loginCheck(HashMap<String, Object> map) {
-		// TODO Auto-generated method stub
-		return null;
+		return dao.loginCheck(map);
 	}
 
 }

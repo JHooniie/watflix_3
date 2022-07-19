@@ -17,8 +17,8 @@ public class MemberService implements IMemberService {
 	IMemberDAO dao;
 
 	@Override
-	public void signUp(MemberVO mem) {
-		// TODO Auto-generated method stub
+	public void insertMember(MemberVO memVo) {
+		dao.insertMember(memVo);
 
 	}
 

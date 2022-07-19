@@ -54,6 +54,7 @@
 							class="link-text">Search</span>
 						</a>
 					</div>
+
 					<!-- rank -->
 					<div class="nav-contents">
 						<a href="../html/movierank.html" class="nav-item"> <!-- <span class="material-symbols-outlined">sort</span> -->

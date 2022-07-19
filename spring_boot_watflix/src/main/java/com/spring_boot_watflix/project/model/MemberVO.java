@@ -2,11 +2,14 @@ package com.spring_boot_watflix.project.model;
 
 import java.util.Date;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 public class MemberVO {
 	private String memNo;
 	private String memId;
 	private String memPwd;
 	private String memNickname;
+	@DateTimeFormat(pattern="yyyy.MM.dd")
 	private Date memBirth;
 	private String memHp;
 	private String memZipcode;

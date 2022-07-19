@@ -14,9 +14,9 @@
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 
-<%--       <link rel="stylesheet" href="<c:url value='css/index.css'/>"> --%>
+<link rel="stylesheet" href="<c:url value='css/index.css'/>">
 <script src="<c:url value='js/jquery-3.6.0.min.js'/>"></script>
-<%--       <script src="<c:url value='jsCustom/index.js'/>"></script> --%>
+<script src="<c:url value='jsCustom/index.js'/>"></script>
 <script src="<c:url value='jsCustom/main.js'/>"></script>
 <script src="<c:url value='jsCustom/mypage_index.js'/>"></script>
 <script src="<c:url value='https://kit.fontawesome.com/50d21a2bed.js'/>"
@@ -90,12 +90,12 @@
 								class="link-text">Login</span>
 							</a>
 							<div id="login-div">
-								<form id="login-form">
+								<form id="login-form" name="login-form" method="post" action="<c:url value='/member/login'/>">
 									<div id="input-div">
-										<input type="text" placeholder="Email" id="username">
-										<input type="password" placeholder="Password" id="password">
+										<input type="text" placeholder="Email" id="memId" name="memId">
+										<input type="password" placeholder="Password" id="memPwd" name="memPwd">
 									</div>
-									<button id="input-btn">
+									<button id="input-btn" type="submit">
 										<span>Login</span>
 									</button>
 								</form>

@@ -9,17 +9,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="viewport" content="minimum-scale=10">
         <title>WatFlix</title>
-        <link rel="stylesheet" href="../css/common.css">
-        <link rel="stylesheet" href="../css/index.css">
-        <link rel="stylesheet" href="../css/signup.css">
-        <script src="../js/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="<c:url value='css/common.css'/>">
+        <link rel="stylesheet" href="<c:url value='css/index.css'/>">
+        <link rel="stylesheet" href="<c:url value='css/signup.css'/>">
+        <script src="<c:url value='js/jquery-3.6.0.min.js'/>"></script>
         <!-- <script src="../jsCustom/common.js"></script> -->
-        <script src="../jsCustom/index.js"></script>
-        <script src="../jsCustom/signup.js"></script>
+        <script src="<c:url value='jsCustom/index.js'/>"></script>
+        <script src="<c:url value='jsCustom/signup.js'/>"></script>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v14.0" nonce="rIi6gLaE"></script>
     
     </head>
     <body>
+    	<!-- navbar -->
+		<c:import url="/WEB-INF/views/layout/nav.jsp" />
+    	
         <!-- main 안쪽에 작성하신 div 넣어주세요 -->
         <main>
             <div id="signup-header">
@@ -41,7 +44,7 @@
                         <span style="font-weight: 700;">이메일로 가입하기</span>
                     </div> 
                     <br>
-                    <form id="signup-form" name="signup-form" method="post" action="joined.html">
+                    <form id="signup-form" name="signup-form" method="post" action="<c:url vlue='joined.html'/>">
                          <div id="signup-content">
                             <!-- MAIL -->
                             <label for="userId">이메일</label>

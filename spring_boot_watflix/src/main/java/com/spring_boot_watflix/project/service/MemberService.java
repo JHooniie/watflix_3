@@ -1,5 +1,7 @@
 package com.spring_boot_watflix.project.service;
 
+import java.util.HashMap;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -30,6 +32,12 @@ public class MemberService implements IMemberService {
 	public String memIdCheck(String memId) {
 		// TODO Auto-generated method stub
 		return null;
+	}
+	
+	// 로그인
+	@Override
+	public String loginCheck(HashMap<String, Object> map) {
+		return dao.loginCheck(map);
 	}
 
 }

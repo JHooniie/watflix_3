@@ -102,7 +102,7 @@
 							</div>
 						</div>
 						<div class="nav-contents">
-							<a href="../html/signup.html" class="member-item"> <!-- <span class="material-symbols-outlined">person_add</span> -->
+							<a href="<c:url value='/member/signUpForm'/>" class="member-item"> <!-- <span class="material-symbols-outlined">person_add</span> -->
 								<i class="fa-solid fa-user-plus fa-lg"></i> <span
 								class="link-text">Sign up</span>
 							</a>

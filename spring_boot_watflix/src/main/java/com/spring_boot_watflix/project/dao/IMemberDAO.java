@@ -6,7 +6,7 @@ import com.spring_boot_watflix.project.model.MemberVO;
 
 public interface IMemberDAO {
 	// 회원가입
-	public void signUp (MemberVO mem);
+	public void insertMember (MemberVO memVo);
 	String memIdCheck (String memId);
 	
 	// 로그인

@@ -8,6 +8,12 @@
   <mapper namespace="com.spring_boot_watflix.dao.IMemberDAO">
   <!-- Resultmap 작성할 것 -->
   
+  	<!-- 회원 가입  -->
+	<insert id="signUp" parameterType="com.spring_boot_watflix.project.model.MemberVO">
+		INSERT member (memNo, memId, memPwd, memNickname, memBirth, memHp, memZipcode, memAddress1, memAddress2, memGenre)
+		VALUES(#{memNo}, #{memId}, #{memPwd}, #{memNickname}, #{memBirth}, #{memHp}, #{memZipcode}, #{memAddress1}, #{memAddress2}, #{memGenre})
+	</insert>
+  
   <!-- 로그인 확인 -->
    <select id="loginCheck" parameterType="hashmap" resultType="string">
   	SELECT memId FROM member WHERE memId=#{memId} and memPwd=#{memPwd}

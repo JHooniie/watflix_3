@@ -8,7 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="viewport" content="minimum-scale=10">
-        <title>WatFlix</title>
+        <title>WattFlix</title>
         <link rel="stylesheet" href="<c:url value='css/common.css'/>">
         <link rel="stylesheet" href="<c:url value='css/index.css'/>">
         <link rel="stylesheet" href="<c:url value='css/signup.css'/>">
@@ -16,6 +16,7 @@
         <!-- <script src="../jsCustom/common.js"></script> -->
         <script src="<c:url value='jsCustom/index.js'/>"></script>
         <script src="<c:url value='jsCustom/signup.js'/>"></script>
+        
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v14.0" nonce="rIi6gLaE"></script>
     
     </head>
